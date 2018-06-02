@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="img/icon.png"> 
+		<title>蘑菇街-我的买手街</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				}
+			ul{
+				list-style:none;
+			}	
+			a{
+				text-decoration:none;
+				font-size:12px;
+				color:#333;
+				
+			}
+			
+			.head{
+				width;100%;
+				height:31px;
+				background:#f2f2f2;
+				border-bottom:1px solid #ddd;
+				
+			}
+			.head_content{
+				width:1190px;
+				margin:0 auto;
+			
+			}
+			.top_logo{
+				float:left;
+				background:url(img/mogujie.png) 0 -242px no-repeat ;
+				padding-left:24px;
+				line-height:14px;
+				margin:8px 0 0 20px;;
+				
+			}
+			.head_content ul{
+				float:right;
+			}
+			.head_content  ul li{
+				float:left;
+				margin-right:18px;
+				margin-top:4px;
+				
+				
+			}
+			.head_content .shop{
+				position:relative;
+				
+			}
+			.head_content .shop_info{
+				background-color:#eee;
+				width:200px;
+				height:30px;
+				line-height:30px;
+				padding:12px 0;
+				text-align:center;
+				position:absolute;
+				top:28px;
+				right:-50px;;
+				font-size:12px;
+				border-radius:0 0 5px 5px;
+				color:#999999;
+				display:none;
+			}
+			 .shop:hover .shop_info{
+				display:block;
+			}
+			
+			.head_content .customer_service {
+				position:relative;
+			}			
+			.head_content .customer_service .service{
+				padding-left:15px;
+			
+			}
+			.head_content .customer_service .pull_down{
+				position:absolute;
+				top:28px;
+				right:-20px;
+				background-color:#eee;
+				width:100px;
+				list-style:none;
+				font-size:12px;
+				border: 1px solid #ddd;
+				border-top: none;
+				border-radius:0 0 3px 3px;	
+				display:none;
+						
+			}
+			
+			.head_content .customer_service .pull_down li a{
+				height:22px;
+				line-height:22px;
+				display:block;
+				text-align:center;
+				padding-left:20px;		
+			}
+			.customer_service:hover .pull_down{
+				display:block;
+			}
+			
+			.head_content  ul>li>a{
+				padding-left:34px;
+				border-left:1px solid #ddd;
+				line-height:14px;
+				
+			
+				
+			}
+			.head_content .top_icon{
+				background:url(img/mogujie.png) -4px -229px no-repeat;
+				width:7px;
+				height:10px;
+				position:absolute;
+				top:12px;
+				
+				
+			}
+			.head_content ul li:first-child a{
+				border-left:none;
+			}
+			
+			.head_content ul>li:nth-child(2){
+				background:url(img/mogujie.png) 8px -532px no-repeat ;
+			}
+			.head_content ul>li:nth-child(3){
+				background:url(img/mogujie.png) 8px -424px no-repeat ;
+			}
+			.head_content ul>li:nth-child(5){
+				background:url(img/mogujie.png) 4px -571px no-repeat ;
+			}
+		
+		
+			.nav{
+				width:100%;	
+			}
+			.nav .nav_content{
+				width:1190px;
+				margin:0 auto;
+				overflow:hidden;
+			}
+			
+			.nav .nav_logo {
+				float:left;
+				height:90px;
+			}
+			.nav .nav_logo img{
+				height:100%;
+			}
+			.nav .nav_search{
+				width:482px;
+				height:90px;
+				float:left;
+				margin-left:120px;
+				
+			}
+			.nav_search_top{
+				margin-top:20px;
+				height:40px;
+			}
+			
+			
+			
+			.nav_search_top {
+				border:1px solid #f07;
+				border-radius:0 6px 6px 0;
+				width: 480px;
+				height: 34px;
+			
+			}
+			
+			.nav_search_top  .nav_search_top_select{
+				text-align:center;
+				margin-top:4px;
+				float:left;
+				width:60px;
+				background:url(img/sanjiao.png) center right no-repeat;
+			}
+			.nav_search_top  .nav_search_top_select span{
+				    color: #f07;
+					font-size:12px;
+					
+					
+			}
+			.nav_search_top  .search_text{
+				
+				width: 310px;
+				height: 22px;
+				line-height:22px;
+				border:none;
+				outline:medium;
+				padding: 6px 0 6px 10px;
+			
+				
+			}
+			.nav_search_top  .search_sut{
+				display:block;
+				width: 100px;
+				height: 34px;
+				line-height:34px;
+				border:none;
+				outline:medium;
+				float:right;
+				background-color:#f07;
+				cursor:pointer;
+				font-size:16px;
+				color:#fff;
+			}
+			    
+			
+			.nav_search  .nav_search_bum{
+				display:block;
+				height:24px;
+				line-height:24px;
+				
+				
+				
+			}
+			.nav_search  .nav_search_bum a{
+				padding-left:6px;
+				
+			}
+			.nav_search  .nav_search_bum a:hover{
+				color:#f07;
+				text-decoration:underline;
+			}
+			
+			.nav .qr_code{
+				float:right;
+				height:90px;
+				
+			}
+			.nav .qr_code img{
+				height:100%;
+			}
+			
+			
+			.subnav{
+				width:100%;
+				border-bottom:2px solid #f07;
+			}
+			.subnav_content{
+				width:1190px;
+				margin:0 auto;
+				overflow:hidden;
+				
+			}
+			.subnav_content .subnav_left{
+				float:left;
+				background-color:blue;
+				width:257px;
+				height:40px;
+				background:url(img/select.png) no-repeat;
+				position:relative;
+				border-radius:6px 6px 0 0;
+			}
+			.subnav_content .subnav_left a{
+				font-size:18px;
+				height:40px;
+				line-height:40px;
+				color:#fff;
+				position:absolute;
+				left:50px;
+				top:0;
+			
+			}
+			
+			.subnav_content .subnav_right{
+				float:left;
+				height:30px;
+				padding-top:10px;
+			}
+			
+			.subnav_content .subnav_right a:hover{
+				color:#f07;
+			}
+			.subnav_content .subnav_right a{
+				font-size:18px;	
+				color:#333;
+				
+				border-right:1px solid #ccc;
+				display:block;
+				height:20px;
+				width:140px;
+				text-align:center;
+				float:left;
+			}
+			.subnav_content .subnav_right a:last-child{
+				border-right:none;
+			}
+			
+			.banner{
+				width:100%;
+				margin-bottom: 15px;
+				background-color: #ffae3e;
+				overflow:hidden;
+			}
+			.banner_conetnt{
+				width:1190px;
+				height:440px;
+				margin:0 auto;
+				
+			}
+			.banner_conetnt .banner_conetnt_menu{
+				height:440px;
+				width:256px;
+				float:left;
+				background-color: rgba(255, 255, 255, 0.8);
+				position:relative;
+			}
+			
+			.banner_conetnt_menu .drop_menu li {
+				height:31px;
+				line-height:29px;
+				
+				
+			}
+			.banner_conetnt_menu .drop_menu li:hover{
+				background-color:#fff;
+			}
+			
+			.banner_conetnt_menu .drop_menu a:hover {
+				text-decoration: underline;
+				
+				
+			}
+			.banner_conetnt_menu .drop_menu li dl{
+				    padding: 5px 0 5px 18px;
+			}
+			.banner_conetnt_menu .drop_menu li dt{
+				float:left;
+				
+			}
+			.banner_conetnt_menu .drop_menu li dt a{
+				font-size:14px;
+				font-weight: 600;
+				color: #333;
+			}
+			
+			.banner_conetnt_menu .drop_menu li dd a{
+				font-size:12px;
+				margin-left:12px;
+				
+			}
+			.drop_menu .menu_icon{
+				width: 12px;
+				height: 13px;
+				display: inline-block;
+				margin-left: 4px;
+				background:url(img/menuicon.png) no-repeat;
+				background-size:100% 100%;
+			}
+			.banner_conetnt_menu .drop_menu_more{
+				position:absolute;
+				top:0;
+				left:100%;
+				width: 777px;
+				height: 440px;
+				background-color:#fff;
+			}
+			
+			
+			
+			.banner_conetnt .banner_conetnt_photo{
+				height:440px;
+				width:768px;
+				background:url(img/banner.jpg) no-repeat;
+				float:left;
+				cursor:pointer;
+			}
+			
+			.banner_conetnt .banner_conetnt_info{
+				height:440px;
+				width:166px;
+				float:right;
+				
+			}
+			.banner_conetnt_info >div{
+				width::166px;
+				height:195px;
+				background-color: rgba(255, 255, 255, 0.8);
+				margin-top:10px;
+				padding-top:10px;
+			}
+			
+			.banner_conetnt_info .join_photo{
+				display:block;
+				width:72px;
+				height:72px;
+				background:#ff94c6 url(img/man.png) center center no-repeat;
+				background-size:30px 30px;
+				border-radius:100%;
+				margin:0 auto;
+				
+			}
+			.banner_conetnt_info .info_user p{
+				font-size:12px;
+				padding:10px ;
+				}
+			.banner_conetnt_info a:nth-child(3){
+				display:block;
+				width:72px;
+				height:24px;
+				border: 1px solid #ff5777;
+				margin:0 auto;
+			}
+			.banner_conetnt_info a:nth-child(3) span{
+				line-height:24px;
+				margin:0 12px;
+				color: #ff5777;
+				font-size:12px;
+			}
+			.banner_conetnt_info .banner_foot{
+				cursor:pointer;
+			}
+			
+			.banner_conetnt_info .banner_foot>div:nth-child(1){
+				
+				height:65px;
+				margin:0 auto;
+				text-align:center;
+				line-height:1.6;
+				
+			}
+			.banner_conetnt_info .banner_foot .top_title{
+				padding-top:10px;
+				font-size:16px;
+				
+				
+			}
+			.banner_conetnt_info .banner_foot .top_txt{
+				font-size:15px;
+				color: #666;
+				
+			
+			}
+			.banner_conetnt_info .banner_foot>div:nth-child(2){
+				width:130px;
+				height:130px;
+				margin:0 auto;
+				overflow:hidden;
+				
+			}
+			.banner_conetnt_info .banner_foot img{
+				width:100%;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+	<!--head-->
+		<div class="head">
+			<div class="head_content">
+				<a href="#" class= "top_logo">蘑菇街首页</a>
+				<ul>
+					<li><a href = "#">登录</a></li>
+					<li ><a href = "#">我的订单</a></li>
+					<li class="shop" ><a href = "#" >购物车</a><div class="shop_info">购物车里没有商品！</div></li>
+					<li class="customer_service"><a href = "#" class="service" >客户服务<span class="top_icon"></span></a>
+						<ol class="pull_down">
+							<li><a href="#">消费者服务</a><li>
+							<li><a href="#">商家服务</a><li>
+							<li><a href="#">规则中心</a><li>
+						</ol>
+					</li>
+					<li class="customer_service"><a href = "#">商家后台<span class="top_icon"></span></a>
+						<ol class="pull_down">
+							<li><a href="#">管理后台</a><li>
+							<li><a href="#">商家社区</a><li>
+							<li><a href="#">商家培训</a><li>
+							<li><a href="#">市场入驻</a><li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+		<!--end head-->	
+		<!--nav-->
+		<div class= "nav">
+			<div class="nav_content">
+				<a class= "nav_logo"> 
+					<img src="img/logo.png" alt="logo">
+				</a>
+				<div class= "nav_search">
+					<div class=" nav_search_top">
+						<div class="nav_search_top_select">
+							<span>搜商品</span>
+						</div>
+						<form>
+							<input type="text" placeholder="拖鞋" class="search_text">
+							
+							</input>
+							<input type="submit" value="搜索" class="search_sut">
+							
+							</input>
+						
+						</form>
+					</div>
+					<div class=" nav_search_bum" >
+						<a href="#">防晒衣</a>
+						<a href="#">凉鞋</a>
+						<a href="#">连衣裙</a>
+						<a href="#" style="color: #ff4466">包包</a>
+						<a href="#">阔腿裤</a>
+						<a href="#" style="color: #ff4466">短裤</a>
+						<a href="#">裙子</a>
+						<a href="#">半身裙</a>
+						<a href="#">拖鞋</a>
+						<a href="#" style="color: #ff4466">睡衣</a>
+						
+						
+
+					</div>
+				</div>
+				<div class="qr_code">
+					<img src="img/QR.png" alt="二维码"></img>
+				</div>
+			</div>	
+		</div>
+		
+		<!--end nav-->
+		<!--subnav-->
+		<div class= "subnav">  
+			<div class="subnav_content">
+				<div class= "subnav_left">
+					<a href="#">主题市场</a>
+				</div>
+				<div class= "subnav_right">
+					<a href="#">省钱团购</a>
+					<a href="#">限时快抢</a>
+				</div>
+			</div>	
+		</div>
+		
+		<!--end subnav-->
+		<!--banner-->
+		<div class="banner">
+			<div class= "banner_conetnt">
+				<div class="banner_conetnt_menu">
+					<ul class="drop_menu">
+
+						
+						<li>
+
+								<dl>
+									<dt> <a href="#">上衣</a></dt>
+										<dd>
+											<a href="#">T恤<span class="menu_icon"></span></a>
+											<a href="#" class="color_true ">夏上新</a>
+											<a href="#">入夏套装<span class="menu_icon"></span></a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">裙子</a></dt>
+										<dd>
+											<a href="#">美裙套装</a>
+											<a href="#">连衣裙<span class="menu_icon"></span></a>
+											<a href="#" class="color_true ">高腰裙</a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">裤子</a></dt>
+										<dd>
+											<a href="#" class="color_true ">牛仔裤</a>
+											<a href="#" class="color_true ">休闲裤</a>
+											<a href="#" class="color_true ">打底裤</a>
+										</dd>
+									
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">女鞋</a></dt>
+										<dd>
+											<a href="#" class="color_true ">凉鞋<span class="menu_icon"></span></a>
+											<a href="#">单鞋</a>
+											<a href="#">休闲运动</a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">包包</a></dt>
+										<dd>
+											<a href="#">双肩包<span class="menu_icon"></span></a>
+											<a href="#" class="color_true ">斜挎包</a>
+											<a href="#">迷你小包</a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">男友</a></dt>
+										<dd>
+											<a href="#">潮</a>
+											<a href="#">休闲裤</a>
+											<a href="#">休闲鞋<span class="menu_icon"></span></a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">运动</a></dt>
+										<dd>
+											<a href="#">运动套装<span class="menu_icon"></span></a>
+											<a href="#">运动鞋</a>
+											<a href="#" class="color_true ">性感泳衣</a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">配饰</a></dt>
+										<dd>
+											<a href="#">棒球帽<span class="menu_icon"></span></a>
+											<a href="#" class="color_true ">耳饰</a>
+											<a href="#">墨镜</a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">美妆</a></dt>
+										<dd>
+											<a href="#">护肤套装<span class="menu_icon"></span></a>
+											<a href="#">面膜<span class="menu_icon"></span></a>
+											<a href="#" class="color_true ">防晒</a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">家居</a></dt>
+										<dd>
+											<a href="#">家居鞋</a>
+											<a href="#">四件套</a>
+											<a href="#">小家具</a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">内衣</a></dt>
+										<dd>
+											<a href="#">少女内衣</a>
+											<a href="#">睡衣</a>
+											<a href="#">内裤</a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">母婴</a></dt>
+										<dd>
+											<a href="#">新生儿<span class="menu_icon"></span></a>
+											<a href="#">孕妇装</a>
+											<a href="#" class="color_true ">萌宝童鞋</a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">电器</a></dt>
+										<dd>
+											<a href="#" class="color_true ">手机壳</a>
+											<a href="#">卷发棒<span class="menu_icon"></span></a>
+											<a href="#">移动电源</a>
+										</dd>
+								</dl>
+						</li>
+						<li>
+
+								<dl>
+									<dt> <a href="#">食品</a></dt>
+										<dd>
+											<a href="#">超值零食<span class="menu_icon"></span></a>
+											<a href="#" class="color_true ">进口</a>
+											<a href="#">怀旧零食</a>
+										</dd>
+								</dl>
+						</li>
+						
+					</ul>
+					<div class="drop_menu_more">
+					
+					</div>
+				</div>
+				
+				<div class="banner_conetnt_photo">
+				</div >
+				
+				<div class="banner_conetnt_info">
+					<div class="info_user">
+						<a href="#" class="join_photo"></a>
+						<p>菇凉好！欢迎来到蘑菇街~</p>
+						<a href="#"><span>会员中心</span></a>
+					</div>
+					<div class="banner_foot">
+						<div>
+							<p class="top_title">春装上新</p>
+							<p class="top_txt">精选潮流美衣</p>
+						</div>
+						<div><img src="img/banner_foot.png" alt="banner_foot"></div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end banner-->
+		
+	</body>
+</html>
