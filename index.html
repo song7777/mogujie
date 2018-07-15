@@ -3,577 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" href="img/icon.png"> 
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<title>蘑菇街-我的买手街</title>
-		<style>
-			*{
-				margin:0;
-				padding:0;
-				}
-			body{height:2000px;}
-			ul{
-				list-style:none;
-			}	
-			a{
-				text-decoration:none;
-				font-size:12px;
-				color:#333;
-				
-			}
-			.color_true {
-				color: #FF0077!important;
-				}
-			.head{
-				width;100%;
-				height:31px;
-				background:#f2f2f2;
-				border-bottom:1px solid #ddd;
-				
-			}
-			.head_content{
-				width:1190px;
-				margin:0 auto;
-			
-			}
-			.top_logo{
-				float:left;
-				background:url(img/mogujie.png) 0 -242px no-repeat ;
-				padding-left:24px;
-				line-height:14px;
-				margin:8px 0 0 20px;;
-				
-			}
-			.head_content ul{
-				float:right;
-			}
-			.head_content  ul>li{
-				float:left;
-				margin-right:18px;
-				margin-top:4px;
-				height:28px;
-				
-			}
-			
-			
-			
-			.head_content .shop{
-				position:relative;
-				
-			}
-			.head_content .shop_info{
-				background-color:#eee;
-				width:200px;
-				height:30px;
-				line-height:30px;
-				padding:12px 0;
-				text-align:center;
-				position:absolute;
-				top:28px;
-				right:-50px;;
-				font-size:12px;
-				border-radius:0 0 5px 5px;
-				color:#999999;
-				display:none;
-			}
-			 .shop:hover .shop_info{
-				display:block;
-			}
-			
-			.head_content ul .customer_service {
-				position:relative;
-			}			
-			.head_content .customer_service .service{
-				padding-left:15px;
-			
-			}
-			.head_content .customer_service  .pull_down{
-				position:absolute;
-				top:100%;
-				left:0;
-				background-color:#eee;
-				width:100px;
-				list-style:none;
-				font-size:12px;
-				border: 1px solid #ddd;
-				border-top: none;
-				border-radius:0 0 3px 3px;	
-				display:none;
-						
-			}
-			
-			.head_content .customer_service .pull_down li a{
-				height:22px;
-				line-height:22px;
-				display:block;
-				text-align:center;
-				padding:2px 0;	
-			}
-			.customer_service:hover .pull_down {
-				display:block;
-				
-			}
-			.customer_service .pull_down li:hover  {
-				background-color: #ddd;
-			}
-			
-			.head_content  ul>li>a{
-				padding-left:34px;
-				border-left:1px solid #ddd;
-				line-height:14px;
-				
-			
-				
-			}
-			.head_content .top_icon{
-				background:url(img/mogujie.png) -4px -229px no-repeat;
-				width:7px;
-				height:10px;
-				position:absolute;
-				top:12px;
-				
-				
-			}
-			.head_content ul li:first-child a{
-				border-left:none;
-			}
-			
-			.head_content ul>li:nth-child(2){
-				background:url(img/mogujie.png) 8px -532px no-repeat ;
-			}
-			.head_content ul>li:nth-child(3){
-				background:url(img/mogujie.png) 8px -424px no-repeat ;
-			}
-			.head_content ul>li:nth-child(5){
-				background:url(img/mogujie.png) 4px -571px no-repeat ;
-			}
 		
-		
-			.nav{
-				width:100%;	
-			}
-			.nav .nav_content{
-				width:1190px;
-				margin:0 auto;
-				overflow:hidden;
-			}
-			
-			.nav .nav_logo {
-				float:left;
-				height:90px;
-			}
-			.nav .nav_logo img{
-				height:100%;
-			}
-			.nav .nav_search{
-				width:482px;
-				height:90px;
-				float:left;
-				margin-left:120px;
-				
-			}
-			.nav_search_top{
-				margin-top:20px;
-				height:40px;
-			}
-			
-			
-			
-			.nav_search_top {
-				border:1px solid #f07;
-				border-radius:0 6px 6px 0;
-				width: 480px;
-				height: 34px;
-			
-			}
-			
-			.nav_search_top  .nav_search_top_select{
-				text-align:center;
-				margin-top:4px;
-				float:left;
-				width:60px;
-				background:url(img/sanjiao.png) center right no-repeat;
-			}
-			.nav_search_top  .nav_search_top_select span{
-				    color: #f07;
-					font-size:12px;
-					
-					
-			}
-			.nav_search_top  .search_text{
-				
-				width: 310px;
-				height: 22px;
-				line-height:22px;
-				border:none;
-				outline:medium;
-				padding: 6px 0 6px 10px;
-			
-				
-			}
-			.nav_search_top  .search_sut{
-				display:block;
-				width: 100px;
-				height: 34px;
-				line-height:34px;
-				border:none;
-				outline:medium;
-				float:right;
-				background-color:#f07;
-				cursor:pointer;
-				font-size:16px;
-				color:#fff;
-			}
-			    
-			
-			.nav_search  .nav_search_bum{
-				display:block;
-				height:24px;
-				line-height:24px;
-				
-				
-				
-			}
-			.nav_search  .nav_search_bum a{
-				padding-left:6px;
-				
-			}
-			.nav_search  .nav_search_bum a:hover{
-				color:#f07;
-				text-decoration:underline;
-			}
-			
-			.nav .qr_code{
-				float:right;
-				height:90px;
-				
-			}
-			.nav .qr_code img{
-				height:100%;
-			}
-			
-			
-			.subnav{
-				width:100%;
-				border-bottom:2px solid #f07;
-			}
-			.subnav_content{
-				width:1190px;
-				margin:0 auto;
-				overflow:hidden;
-				
-			}
-			.subnav_content .subnav_left{
-				float:left;
-				background-color:blue;
-				width:257px;
-				height:40px;
-				background:url(img/select.png) no-repeat;
-				position:relative;
-				border-radius:6px 6px 0 0;
-			}
-			.subnav_content .subnav_left a{
-				font-size:18px;
-				height:40px;
-				line-height:40px;
-				color:#fff;
-				position:absolute;
-				left:50px;
-				top:0;
-			
-			}
-			
-			.subnav_content .subnav_right{
-				float:left;
-				height:30px;
-				padding-top:10px;
-			}
-			
-			.subnav_content .subnav_right a:hover{
-				color:#f07;
-			}
-			.subnav_content .subnav_right a{
-				font-size:18px;	
-				color:#333;
-				
-				border-right:1px solid #ccc;
-				display:block;
-				height:20px;
-				width:140px;
-				text-align:center;
-				float:left;
-			}
-			.subnav_content .subnav_right a:last-child{
-				border-right:none;
-			}
-			
-			.banner{
-				width:100%;
-				margin-bottom: 15px;
-				background-color: #f5a3b6;
-				overflow:hidden;
-			}
-			.banner_conetnt{
-				width:1190px;
-				height:440px;
-				margin:0 auto;
-				
-			}
-			.banner_conetnt .banner_conetnt_menu{
-				height:440px;
-				width:256px;
-				float:left;
-				background-color: rgba(255, 255, 255, 0.8);
-				position:relative;
-			}
-			
-			.banner_conetnt_menu .drop_menu li {
-				height:31px;
-				line-height:29px;
-				
-				
-			}
-			.banner_conetnt_menu .drop_menu li:hover{
-				background-color:#fff;
-			}
-			
-			.banner_conetnt_menu .drop_menu a:hover {
-				text-decoration: underline;
-				
-				
-			}
-			.banner_conetnt_menu .drop_menu li dl{
-				    padding: 5px 0 5px 18px;
-			}
-			.banner_conetnt_menu .drop_menu li dt{
-				float:left;
-				
-			}
-			.banner_conetnt_menu .drop_menu li dt a{
-				font-size:14px;
-				font-weight: 600;
-				color: #333;
-			}
-			
-			.banner_conetnt_menu .drop_menu li dd a{
-				font-size:12px;
-				margin-left:12px;
-				
-			}
-			.drop_menu .menu_icon{
-				width: 12px;
-				height: 13px;
-				display: inline-block;
-				margin-left: 4px;
-				background:url(img/menuicon.png) no-repeat;
-				background-size:100% 100%;
-			}
-			.banner_conetnt_menu .drop_menu_more{
-				position:absolute;
-				top:0;
-				left:100%;
-				width: 777px;
-				height: 440px;
-				background-color:#fff;
-				display:none;
-			}
-			.banner_conetnt_menu li:hover  .drop_menu_more{
-				display:block;
-			}
-			
-			 .banner_conetnt_menu .drop_menu_more .drop_menu_more_left{
-				width:500px;
-				height:440px;
-				float:left;
-				padding-left:20px;
-				
-			 
-			 }
-			 .banner_conetnt_menu .drop_menu_more .drop_menu_more_left .menu_more_warp{
-				margin-top:15px;
-			 }
-			 .banner_conetnt_menu .drop_menu_more .drop_menu_more_left  .more_list_title{
-				width:500px;
-				height:24px;
-				line-height:24px;
-				font-size:24px;
-			 
-			 }
-			
-			 .banner_conetnt_menu .drop_menu_more .drop_menu_more_left  .more_list_title .more_list_title_more{
-				float:right;
-				margin-right: 30px;
-					
-			 }
-			 .banner_conetnt_menu .drop_menu_more .drop_menu_more_left  .more_list{
-				margin-top: 8px;
-				font-size: 12px;
-				color: #999;
-			 }
-			  .banner_conetnt_menu .drop_menu_more .drop_menu_more_left  .more_list a{  margin: 6px 20px 0 0;}
-			   
-			 .banner_conetnt_menu  .drop_menu_more .drop_menu_more_right{
-				width:256px;
-				height:440px;
-				float:right;
-				border-left: 1px solid #f6f6f6;
-				
-			 }
-			 .banner_conetnt_menu  .drop_menu_more .drop_menu_more_right .menu_more_right_h2{
-				font-size:16px;
-				text-align:center;
-				margin:15px auto 10px;
-			 
-			 }
-			
-			.banner_conetnt_menu  .drop_menu_more .drop_menu_more_right>a{
-				margin: 6px 4px 2px 17px;
-				display:block;
-				width:100px;
-				height:120px;
-				float:left;
-				text-decoration:none;
-			}
-			.banner_conetnt_menu  .drop_menu_more .drop_menu_more_right a div:nth-child(1){
-				width:100px;
-				height:100px;
-			}
-			.banner_conetnt_menu  .drop_menu_more .drop_menu_more_right a div:nth-child(2){
-				width:100px;
-				height:22px;
-				line-height:22px;
-				white-space: nowrap;
-				text-overflow: ellipsis;
-				overflow: hidden;
-			}
-			
-			.banner_conetnt .banner_conetnt_photo{
-				height:440px;
-				width:768px;
-				background:url(img/banner.jpg) no-repeat;
-				float:left;
-				cursor:pointer;
-			}
-			
-			.banner_conetnt .banner_conetnt_info{
-				height:440px;
-				width:166px;
-				float:right;
-				
-			}
-			.banner_conetnt_info >div{
-				width::166px;
-				height:195px;
-				background-color: rgba(255, 255, 255, 0.8);
-				margin-top:10px;
-				padding-top:10px;
-			}
-			
-			.banner_conetnt_info .join_photo{
-				display:block;
-				width:72px;
-				height:72px;
-				background:#ff94c6 url(img/man.png) center center no-repeat;
-				background-size:30px 30px;
-				border-radius:100%;
-				margin:0 auto;
-				
-			}
-			.banner_conetnt_info .info_user p{
-				font-size:12px;
-				padding:10px ;
-				}
-			.banner_conetnt_info a:nth-child(3){
-				display:block;
-				width:72px;
-				height:24px;
-				border: 1px solid #ff5777;
-				margin:0 auto;
-			}
-			.banner_conetnt_info a:nth-child(3) span{
-				line-height:24px;
-				margin:0 12px;
-				color: #ff5777;
-				font-size:12px;
-			}
-			.banner_conetnt_info .banner_foot{
-				cursor:pointer;
-			}
-			
-			.banner_conetnt_info .banner_foot>div:nth-child(1){
-				
-				height:65px;
-				margin:0 auto;
-				text-align:center;
-				line-height:1.6;
-				
-			}
-			.banner_conetnt_info .banner_foot .top_title{
-				padding-top:10px;
-				font-size:16px;
-				
-				
-			}
-			.banner_conetnt_info .banner_foot .top_txt{
-				font-size:15px;
-				color: #666;
-				
-			
-			}
-			.banner_conetnt_info .banner_foot>div:nth-child(2){
-				width:130px;
-				height:130px;
-				margin:0 auto;
-				overflow:hidden;
-				
-			}
-			.banner_conetnt_info .banner_foot img{
-				width:100%;
-				
-			}
-			
-			
-			.module_row{
-				width:100%;
-			}
-			.module_row .mod_row{
-				width:1190px;
-				margin:0 auto;
-			}
-			.module_row .mod_row .mod_row_top{
-				width:100%;
-				height:294px;
-				margin-bottom:10px;
-				background-color:#cd5e3c;
-				position:relative;
-			}
-			.module_row .mod_row .mod_row_top .brand_banner{
-				width:230px;
-				height:294px;
-				display:block;
-				background:url(img/must_buy.png)  no-repeat;
-				background-size: cover;
-				
-			}
-			.module_row .mod_row .mod_row_bom{
-				width:100%;
-				height:150px;
-			}
-			.module_row .mod_row .mod_row_bom a{
-				display:block;
-				float:left;
-				width:230px;
-				margin-right:10px;
-			}
-			
-			.module_row .mod_row .mod_row_bom a:nth-child(1){
-				width:470px;
-			}
-			.module_row .mod_row .mod_row_bom a:nth-child(4){
-				margin-right:0;
-			}
-			.module_row .mod_row .mod_row_bom a img{
-				width:100%;
-			}
-		</style>
 	</head>
 	<body>
 	<!--head-->
@@ -847,6 +279,48 @@
 										</dd>
 									
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true "> 夏上新</a><a href="#" class="color_true ">oversizeT恤</a><a href="#">衬衫</a>
+												<a href="#">T恤</a><a href="#" class="color_true ">入夏套装</a><a href="#">长款T恤</a>
+												<a href="#">轻薄针织</a><br/><a href="#" class="color_true ">蕾丝TOP</a><a href="#">防晒衫</a>
+												<a href="#">印花T恤</a><a href="#" class="color_true ">甜美荷叶边</a><a href="#">背心吊带</a>
+												<a href="#" class="color_true ">夏日花卉</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行新品</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">防晒衬衫</a><a href="#">字母T恤</a><a href="#">时髦露肩</a>
+												<a href="#">轻薄防晒</a><a href="#">海军风</a><a href="#">短款外套</a><br/>
+												<a href="#">针织开衫</a><a href="#">雪纺衫</a><a href="#">牛仔衬衫</a>
+												<a href="#">休闲西装</a><a href="#">马甲</a><a href="#">短袖T恤</a>
+												
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">潮流时尚</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">性感V领</a><a href="#">喇叭袖</a><a href="#">刺绣</a>
+												<a href="#">俏皮露肩</a><a href="#">绑带衬衫</a><a href="#">条纹控</a>
+												<a href="#">白衬衫</a><br/><a href="#">印花T恤</a><a href="#">一字肩</a>
+												<a href="#">情侣装</a><a href="#">显瘦衬衫</a>
+											</dd>
+										</dl>
+									</div>
+									
 						</li>
 						<li>
 
@@ -858,6 +332,77 @@
 											<a href="#">休闲运动</a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true ">精致连衣裙</a><a href="#">美裙套装</a><a href="#" class="color_true ">半身裙</a>
+												<a href="#">雪纺裙</a><a href="#">针织裙</a><a href="#">开叉牛仔裤</a><br/>
+												<a href="#">蕾丝裙</a><a href="#">高腰裙</a><a href="#">包臀裙</a>
+												<a href="#">格纹裙</a><a href="#">鱼尾裙</a><a href="#">印花裙</a>
+												<a href="#">伞裙</a><a href="#">卫衣裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行精选</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">毛呢裙</a><a href="#">包臀裙</a><a href="#">衬衫裙</a>
+												<a href="#">百褶裙</a><a href="#">收腰裙</a><a href="#">皮裙</a>
+												<a href="#">针织裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">经典必备</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">鱼尾裙</a><a href="#">背带裙</a><a href="#">半身长裙</a>
+												<a href="#">小黑裙</a><a href="#">PU皮裙</a><a href="#">A字群</a>
+												<a href="#">丝绒裙</a><br/><a href="#">针织裙</a>
+											</dd>
+										</dl>
+									</div>
+									
+									<div class= "drop_menu_more_right">
+										<h2 class="menu_more_right_h2">
+											/猜你喜欢/
+										</h2>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										
+									</div>
+								</div>
+									
 						</li>
 						<li>
 
@@ -869,6 +414,48 @@
 											<a href="#">迷你小包</a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true "> 夏上新</a><a href="#" class="color_true ">oversizeT恤</a><a href="#">衬衫</a>
+												<a href="#">T恤</a><a href="#" class="color_true ">入夏套装</a><a href="#">长款T恤</a>
+												<a href="#">轻薄针织</a><br/><a href="#" class="color_true ">蕾丝TOP</a><a href="#">防晒衫</a>
+												<a href="#">印花T恤</a><a href="#" class="color_true ">甜美荷叶边</a><a href="#">背心吊带</a>
+												<a href="#" class="color_true ">夏日花卉</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行新品</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">防晒衬衫</a><a href="#">字母T恤</a><a href="#">时髦露肩</a>
+												<a href="#">轻薄防晒</a><a href="#">海军风</a><a href="#">短款外套</a><br/>
+												<a href="#">针织开衫</a><a href="#">雪纺衫</a><a href="#">牛仔衬衫</a>
+												<a href="#">休闲西装</a><a href="#">马甲</a><a href="#">短袖T恤</a>
+												
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">潮流时尚</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">性感V领</a><a href="#">喇叭袖</a><a href="#">刺绣</a>
+												<a href="#">俏皮露肩</a><a href="#">绑带衬衫</a><a href="#">条纹控</a>
+												<a href="#">白衬衫</a><br/><a href="#">印花T恤</a><a href="#">一字肩</a>
+												<a href="#">情侣装</a><a href="#">显瘦衬衫</a>
+											</dd>
+										</dl>
+									</div>
+									
 						</li>
 						<li>
 
@@ -880,6 +467,77 @@
 											<a href="#">休闲鞋<span class="menu_icon"></span></a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true ">精致连衣裙</a><a href="#">美裙套装</a><a href="#" class="color_true ">半身裙</a>
+												<a href="#">雪纺裙</a><a href="#">针织裙</a><a href="#">开叉牛仔裤</a><br/>
+												<a href="#">蕾丝裙</a><a href="#">高腰裙</a><a href="#">包臀裙</a>
+												<a href="#">格纹裙</a><a href="#">鱼尾裙</a><a href="#">印花裙</a>
+												<a href="#">伞裙</a><a href="#">卫衣裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行精选</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">毛呢裙</a><a href="#">包臀裙</a><a href="#">衬衫裙</a>
+												<a href="#">百褶裙</a><a href="#">收腰裙</a><a href="#">皮裙</a>
+												<a href="#">针织裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">经典必备</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">鱼尾裙</a><a href="#">背带裙</a><a href="#">半身长裙</a>
+												<a href="#">小黑裙</a><a href="#">PU皮裙</a><a href="#">A字群</a>
+												<a href="#">丝绒裙</a><br/><a href="#">针织裙</a>
+											</dd>
+										</dl>
+									</div>
+									
+									<div class= "drop_menu_more_right">
+										<h2 class="menu_more_right_h2">
+											/猜你喜欢/
+										</h2>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										
+									</div>
+								</div>
+									
 						</li>
 						<li>
 
@@ -891,6 +549,48 @@
 											<a href="#" class="color_true ">性感泳衣</a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true "> 夏上新</a><a href="#" class="color_true ">oversizeT恤</a><a href="#">衬衫</a>
+												<a href="#">T恤</a><a href="#" class="color_true ">入夏套装</a><a href="#">长款T恤</a>
+												<a href="#">轻薄针织</a><br/><a href="#" class="color_true ">蕾丝TOP</a><a href="#">防晒衫</a>
+												<a href="#">印花T恤</a><a href="#" class="color_true ">甜美荷叶边</a><a href="#">背心吊带</a>
+												<a href="#" class="color_true ">夏日花卉</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行新品</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">防晒衬衫</a><a href="#">字母T恤</a><a href="#">时髦露肩</a>
+												<a href="#">轻薄防晒</a><a href="#">海军风</a><a href="#">短款外套</a><br/>
+												<a href="#">针织开衫</a><a href="#">雪纺衫</a><a href="#">牛仔衬衫</a>
+												<a href="#">休闲西装</a><a href="#">马甲</a><a href="#">短袖T恤</a>
+												
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">潮流时尚</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">性感V领</a><a href="#">喇叭袖</a><a href="#">刺绣</a>
+												<a href="#">俏皮露肩</a><a href="#">绑带衬衫</a><a href="#">条纹控</a>
+												<a href="#">白衬衫</a><br/><a href="#">印花T恤</a><a href="#">一字肩</a>
+												<a href="#">情侣装</a><a href="#">显瘦衬衫</a>
+											</dd>
+										</dl>
+									</div>
+									
 						</li>
 						<li>
 
@@ -902,6 +602,77 @@
 											<a href="#">墨镜</a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true ">精致连衣裙</a><a href="#">美裙套装</a><a href="#" class="color_true ">半身裙</a>
+												<a href="#">雪纺裙</a><a href="#">针织裙</a><a href="#">开叉牛仔裤</a><br/>
+												<a href="#">蕾丝裙</a><a href="#">高腰裙</a><a href="#">包臀裙</a>
+												<a href="#">格纹裙</a><a href="#">鱼尾裙</a><a href="#">印花裙</a>
+												<a href="#">伞裙</a><a href="#">卫衣裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行精选</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">毛呢裙</a><a href="#">包臀裙</a><a href="#">衬衫裙</a>
+												<a href="#">百褶裙</a><a href="#">收腰裙</a><a href="#">皮裙</a>
+												<a href="#">针织裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">经典必备</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">鱼尾裙</a><a href="#">背带裙</a><a href="#">半身长裙</a>
+												<a href="#">小黑裙</a><a href="#">PU皮裙</a><a href="#">A字群</a>
+												<a href="#">丝绒裙</a><br/><a href="#">针织裙</a>
+											</dd>
+										</dl>
+									</div>
+									
+									<div class= "drop_menu_more_right">
+										<h2 class="menu_more_right_h2">
+											/猜你喜欢/
+										</h2>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										
+									</div>
+								</div>
+									
 						</li>
 						<li>
 
@@ -913,6 +684,48 @@
 											<a href="#" class="color_true ">防晒</a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true "> 夏上新</a><a href="#" class="color_true ">oversizeT恤</a><a href="#">衬衫</a>
+												<a href="#">T恤</a><a href="#" class="color_true ">入夏套装</a><a href="#">长款T恤</a>
+												<a href="#">轻薄针织</a><br/><a href="#" class="color_true ">蕾丝TOP</a><a href="#">防晒衫</a>
+												<a href="#">印花T恤</a><a href="#" class="color_true ">甜美荷叶边</a><a href="#">背心吊带</a>
+												<a href="#" class="color_true ">夏日花卉</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行新品</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">防晒衬衫</a><a href="#">字母T恤</a><a href="#">时髦露肩</a>
+												<a href="#">轻薄防晒</a><a href="#">海军风</a><a href="#">短款外套</a><br/>
+												<a href="#">针织开衫</a><a href="#">雪纺衫</a><a href="#">牛仔衬衫</a>
+												<a href="#">休闲西装</a><a href="#">马甲</a><a href="#">短袖T恤</a>
+												
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">潮流时尚</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">性感V领</a><a href="#">喇叭袖</a><a href="#">刺绣</a>
+												<a href="#">俏皮露肩</a><a href="#">绑带衬衫</a><a href="#">条纹控</a>
+												<a href="#">白衬衫</a><br/><a href="#">印花T恤</a><a href="#">一字肩</a>
+												<a href="#">情侣装</a><a href="#">显瘦衬衫</a>
+											</dd>
+										</dl>
+									</div>
+									
 						</li>
 						<li>
 
@@ -924,6 +737,77 @@
 											<a href="#">小家具</a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true ">精致连衣裙</a><a href="#">美裙套装</a><a href="#" class="color_true ">半身裙</a>
+												<a href="#">雪纺裙</a><a href="#">针织裙</a><a href="#">开叉牛仔裤</a><br/>
+												<a href="#">蕾丝裙</a><a href="#">高腰裙</a><a href="#">包臀裙</a>
+												<a href="#">格纹裙</a><a href="#">鱼尾裙</a><a href="#">印花裙</a>
+												<a href="#">伞裙</a><a href="#">卫衣裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行精选</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">毛呢裙</a><a href="#">包臀裙</a><a href="#">衬衫裙</a>
+												<a href="#">百褶裙</a><a href="#">收腰裙</a><a href="#">皮裙</a>
+												<a href="#">针织裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">经典必备</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">鱼尾裙</a><a href="#">背带裙</a><a href="#">半身长裙</a>
+												<a href="#">小黑裙</a><a href="#">PU皮裙</a><a href="#">A字群</a>
+												<a href="#">丝绒裙</a><br/><a href="#">针织裙</a>
+											</dd>
+										</dl>
+									</div>
+									
+									<div class= "drop_menu_more_right">
+										<h2 class="menu_more_right_h2">
+											/猜你喜欢/
+										</h2>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										
+									</div>
+								</div>
+									
 						</li>
 						<li>
 
@@ -935,6 +819,48 @@
 											<a href="#">内裤</a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true "> 夏上新</a><a href="#" class="color_true ">oversizeT恤</a><a href="#">衬衫</a>
+												<a href="#">T恤</a><a href="#" class="color_true ">入夏套装</a><a href="#">长款T恤</a>
+												<a href="#">轻薄针织</a><br/><a href="#" class="color_true ">蕾丝TOP</a><a href="#">防晒衫</a>
+												<a href="#">印花T恤</a><a href="#" class="color_true ">甜美荷叶边</a><a href="#">背心吊带</a>
+												<a href="#" class="color_true ">夏日花卉</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行新品</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">防晒衬衫</a><a href="#">字母T恤</a><a href="#">时髦露肩</a>
+												<a href="#">轻薄防晒</a><a href="#">海军风</a><a href="#">短款外套</a><br/>
+												<a href="#">针织开衫</a><a href="#">雪纺衫</a><a href="#">牛仔衬衫</a>
+												<a href="#">休闲西装</a><a href="#">马甲</a><a href="#">短袖T恤</a>
+												
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">潮流时尚</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">性感V领</a><a href="#">喇叭袖</a><a href="#">刺绣</a>
+												<a href="#">俏皮露肩</a><a href="#">绑带衬衫</a><a href="#">条纹控</a>
+												<a href="#">白衬衫</a><br/><a href="#">印花T恤</a><a href="#">一字肩</a>
+												<a href="#">情侣装</a><a href="#">显瘦衬衫</a>
+											</dd>
+										</dl>
+									</div>
+									
 						</li>
 						<li>
 
@@ -946,6 +872,77 @@
 											<a href="#" class="color_true ">萌宝童鞋</a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true ">精致连衣裙</a><a href="#">美裙套装</a><a href="#" class="color_true ">半身裙</a>
+												<a href="#">雪纺裙</a><a href="#">针织裙</a><a href="#">开叉牛仔裤</a><br/>
+												<a href="#">蕾丝裙</a><a href="#">高腰裙</a><a href="#">包臀裙</a>
+												<a href="#">格纹裙</a><a href="#">鱼尾裙</a><a href="#">印花裙</a>
+												<a href="#">伞裙</a><a href="#">卫衣裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行精选</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">毛呢裙</a><a href="#">包臀裙</a><a href="#">衬衫裙</a>
+												<a href="#">百褶裙</a><a href="#">收腰裙</a><a href="#">皮裙</a>
+												<a href="#">针织裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">经典必备</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">鱼尾裙</a><a href="#">背带裙</a><a href="#">半身长裙</a>
+												<a href="#">小黑裙</a><a href="#">PU皮裙</a><a href="#">A字群</a>
+												<a href="#">丝绒裙</a><br/><a href="#">针织裙</a>
+											</dd>
+										</dl>
+									</div>
+									
+									<div class= "drop_menu_more_right">
+										<h2 class="menu_more_right_h2">
+											/猜你喜欢/
+										</h2>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										
+									</div>
+								</div>
+									
 						</li>
 						<li>
 
@@ -957,6 +954,48 @@
 											<a href="#">移动电源</a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true "> 夏上新</a><a href="#" class="color_true ">oversizeT恤</a><a href="#">衬衫</a>
+												<a href="#">T恤</a><a href="#" class="color_true ">入夏套装</a><a href="#">长款T恤</a>
+												<a href="#">轻薄针织</a><br/><a href="#" class="color_true ">蕾丝TOP</a><a href="#">防晒衫</a>
+												<a href="#">印花T恤</a><a href="#" class="color_true ">甜美荷叶边</a><a href="#">背心吊带</a>
+												<a href="#" class="color_true ">夏日花卉</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行新品</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">防晒衬衫</a><a href="#">字母T恤</a><a href="#">时髦露肩</a>
+												<a href="#">轻薄防晒</a><a href="#">海军风</a><a href="#">短款外套</a><br/>
+												<a href="#">针织开衫</a><a href="#">雪纺衫</a><a href="#">牛仔衬衫</a>
+												<a href="#">休闲西装</a><a href="#">马甲</a><a href="#">短袖T恤</a>
+												
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">潮流时尚</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">性感V领</a><a href="#">喇叭袖</a><a href="#">刺绣</a>
+												<a href="#">俏皮露肩</a><a href="#">绑带衬衫</a><a href="#">条纹控</a>
+												<a href="#">白衬衫</a><br/><a href="#">印花T恤</a><a href="#">一字肩</a>
+												<a href="#">情侣装</a><a href="#">显瘦衬衫</a>
+											</dd>
+										</dl>
+									</div>
+									
 						</li>
 						<li>
 
@@ -968,15 +1007,89 @@
 											<a href="#">怀旧零食</a>
 										</dd>
 								</dl>
+								<div class="drop_menu_more">
+									<div class= "drop_menu_more_left">
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">当季热卖</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#" class="color_true ">精致连衣裙</a><a href="#">美裙套装</a><a href="#" class="color_true ">半身裙</a>
+												<a href="#">雪纺裙</a><a href="#">针织裙</a><a href="#">开叉牛仔裤</a><br/>
+												<a href="#">蕾丝裙</a><a href="#">高腰裙</a><a href="#">包臀裙</a>
+												<a href="#">格纹裙</a><a href="#">鱼尾裙</a><a href="#">印花裙</a>
+												<a href="#">伞裙</a><a href="#">卫衣裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">流行精选</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">毛呢裙</a><a href="#">包臀裙</a><a href="#">衬衫裙</a>
+												<a href="#">百褶裙</a><a href="#">收腰裙</a><a href="#">皮裙</a>
+												<a href="#">针织裙</a>
+											</dd>
+										</dl>
+										<dl class="menu_more_warp">
+											<dt class="more_list_title">
+												<a href="#" class="more_list_title_a">经典必备</a>
+												<a href="#" class="more_list_title_more">更多</a>
+											</dt>
+											<dd class="more_list">
+												<a href="#">鱼尾裙</a><a href="#">背带裙</a><a href="#">半身长裙</a>
+												<a href="#">小黑裙</a><a href="#">PU皮裙</a><a href="#">A字群</a>
+												<a href="#">丝绒裙</a><br/><a href="#">针织裙</a>
+											</dd>
+										</dl>
+									</div>
+									
+									<div class= "drop_menu_more_right">
+										<h2 class="menu_more_right_h2">
+											/猜你喜欢/
+										</h2>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										<a href="#">
+											<div><img src="img/like1-2.jpg"></div>
+											<div>2018夏装新款韩范双层木耳边立领小碎花雪纺衫女洋气小衫无袖上衣</div>
+										</a>
+										
+									</div>
+								</div>
+									
 						</li>
 						
 					</ul>
 					
 				</div>
+				<div class="banner_conetnt_middle">
 				
-				<div class="banner_conetnt_photo">
-				</div >
-				
+					<div class="banner_conetnt_photo">
+					</div >
+					<div class= "banner_btn">
+					</div>
+				</div>
 				<div class="banner_conetnt_info">
 					<div class="info_user">
 						<a href="#" class="join_photo"></a>
@@ -995,14 +1108,138 @@
 			</div>
 		</div>
 		<!--end banner-->
+		
+		<!--module_row-->
+		
 		<div class="module_row">
 			<div class="mod_row" >
 				<div class="mod_row_top">
 					<div class="brandCountdown">
+						<ul>
+							<li></li>
+							<li>:</li>
+							<li></li>
+							<li>:</li>
+							<li></li>
+						</ul>
 					</div>
 					<a class="brand_banner">
 					</a>
 					<div class="fr">
+						<div class="mslide_content_box">
+							<div class="mslide_banners">
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy1.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy2.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy3.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy4.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										
+										
+										
+									
+								</div>
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy5.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy6.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy7.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy8.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										
+										
+										
+									
+								</div>
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy9.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy10.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy11.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/buy12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> <del>¥98.58</del> 
+											</div>
+										</div>
+										
+										
+										
+									
+								</div>
+							
+								
+						
+							</div>
+							<div class="mslide_toggle_btn mslide_prev_btn"><</div>
+							<div class="mslide_toggle_btn mslide_next_btn">></div>
+						</div>
 					</div>
 				</div>
 				<div class="mod_row_bom">
@@ -1016,5 +1253,1723 @@
 			</div>
 		</div>
 		
+		<!--end module_row-->
+	<!--women-->	
+		<div class="women"> 	
+			<div class="women_content">
+				<div class="topLink">
+					<dl>
+						<dt>女装</dt>
+						<dd><a href="">印花T恤</a> </dd>|
+						<dd><a href="">印花T恤</a> </dd>|
+						<dd><a href="">打底裤</a> </dd>|
+						<dd><a href="">爆款套装</a></dd>|
+						<dd><a href="">连帽卫衣</a></dd>  |
+						<dd><a href="">设计师衬衫</a> </dd>|
+					</dl>
+				</div>
+				<div class="leftBanner">
+					<a href="#"><img src="img/womenleft.jpg"/></a>
+				</div>
+				<div class="rightArea">
+					<div class="rightArea_top">
+						<div class="topSwiper">
+						<div class="mslide_content_box">
+							<div class="mslide_banners">
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl1.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl2.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套时髦网红宽松显瘦两件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl3.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套时髦网红宽松显瘦两件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl4.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套时髦网红宽松显瘦两件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+									
+								</div>
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl5.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl6.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl7.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl8.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+									
+								</div>
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl9.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl10.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl11.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/girl12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+									
+								</div>
+								
+								
+						
+							</div>
+							<div class="mslide_toggle_btn mslide_prev_btn2"><</div>
+							<div class="mslide_toggle_btn mslide_next_btn2">></div>
+						</div>
+					</div>
+					</div>
+					<div class="rightArea_middle">
+						<div class="women1">
+							<a href="#"><img src="img/women1.jpg"/></a>
+						</div>
+						<div class="women2">
+							<a href="#"><img src="img/women2.jpg"/></a>
+						</div>
+						<div class="women3">
+							<a href="#"><img src="img/women3.jpg"/></a>
+						</div>
+					
+					</div>
+					<div class="rightArea_btm">
+						<a href="#">
+							<div class="btm_info">
+								<div class="goodsTitle">热卖T恤</div>
+								<div class="goodsDesc">早春新品29元起</div>
+							</div>
+							<img src="img/women4.png"/>
+						</a>
+						<a href="#">
+								<div class="btm_info">
+									<div class="goodsTitle">春日美裙</div>
+									<div class="goodsDesc">郊游必备单品</div>
+								</div>
+								<img src="img/women5.png"/>
+							</a>
+						<a href="#">
+								<div class="btm_info">
+									<div class="goodsTitle">春季衬衫</div>
+									<div class="goodsDesc">简约设计师款</div>
+								</div>
+								<img src="img/women6.png"/>
+							</a>
+						<a href="#">
+								<div class="btm_info">
+									<div class="goodsTitle">韩版卫衣</div>
+									<div class="goodsDesc">百搭必备</div>
+								</div>
+								<img src="img/women7.png"/>
+							</a>
+					
+				</div>
+			
+			
+			
+			
+			
+			
+			</div>		
+		</div>
+		
+		</div>
+<!--end women-->	
+		<!--shoe-->
+		<div class="shoe"> 	
+			<div class="shoe_content">
+				<div class="topLink">
+					<dl>
+						<dt>女鞋&包包</dt>
+						<dd><a href="">焕新凉鞋 </a> </dd>|
+						<dd><a href="">单鞋 </a> </dd>|
+						<dd><a href="">拖鞋 </a> </dd>|
+						<dd><a href="">运动鞋 </a></dd>|
+						<dd><a href="">休闲鞋</a></dd>  |
+						<dd><a href="">帆布鞋</a> </dd>|
+					</dl>
+				</div>
+				<div class="leftBanner">
+					<a href="#"><img src="img/shoe.jpg"/></a>
+				</div>
+				<div class="middleArea">
+						<div class="topSwiper">
+						<div class="mslide_content_box">
+							<div class="mslide_banners">
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe11.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe13.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe23.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe24.png" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe25.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe26.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe17.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+								
+							</div>
+						<div class="banner_menu">
+										
+								</div>
+						</div>
+				
+					</div>
+					
+			
+			
+			
+				</div>
+				
+				
+				<div class="rightArea">
+					<div class="bg-white">
+						<div class="header-wrapper">
+							<span class="goods-shopName">热销商品推荐</span>
+							<span class="turn-next">换一批</span>
+						</div>
+						<a href="#">
+							<img src="img/shoeright1.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">Angelababy同款2018女新款港味时尚粉红防滑百搭学生魔术贴厚底凉鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright2.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">秋冬季新款镂空蝴蝶结加绒保暖细跟单鞋女高跟鞋尖头绒面黑色女鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright3.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">断码清仓 特价 春韩国厚底原宿运动鞋女韩版女鞋学生鞋女休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright4.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">2018春新品帆布鞋小白鞋女鞋透气运动鞋厚底内增高板鞋休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+					</div>	
+				</div>
+				
+				
+				
+			</div>		
+		
+		
+		</div>
+		<!--shoe-->
+		
+			
+			<!--bf-->
+		<div class="shoe"> 	
+			<div class="shoe_content">
+				<div class="topLink">
+					<dl>
+						<dt>男友&运动</dt>
+						<dd><a href="">潮男T恤  </a> </dd>|
+						<dd><a href="">卫衣  </a> </dd>|
+						<dd><a href=""> 潮鞋  </a> </dd>|
+						<dd><a href="">休闲裤 </a></dd>|
+						<dd><a href="">万能衬衫</a></dd>  |
+						
+					</dl>
+				</div>
+				<div class="leftBanner">
+					<a href="#"><img src="img/bf.jpg"/></a>
+				</div>
+				<div class="middleArea">
+						<div class="topSwiper">
+						<div class="mslide_content_box">
+							<div class="mslide_banners">
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe11.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe13.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe23.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe24.png" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe25.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe26.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe17.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+								
+							</div>
+						<div class="banner_menu">
+										
+								</div>
+						</div>
+				
+					</div>
+					
+			
+			
+			
+				</div>
+				
+				
+				<div class="rightArea">
+					<div class="bg-white">
+						<div class="header-wrapper">
+							<span class="goods-shopName">热销商品推荐</span>
+							<span class="turn-next">换一批</span>
+						</div>
+						<a href="#">
+							<img src="img/shoeright1.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">Angelababy同款2018女新款港味时尚粉红防滑百搭学生魔术贴厚底凉鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright2.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">秋冬季新款镂空蝴蝶结加绒保暖细跟单鞋女高跟鞋尖头绒面黑色女鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright3.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">断码清仓 特价 春韩国厚底原宿运动鞋女韩版女鞋学生鞋女休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright4.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">2018春新品帆布鞋小白鞋女鞋透气运动鞋厚底内增高板鞋休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+					</div>	
+				</div>
+				
+				
+				
+			</div>		
+		
+		
+		</div>
+		<!--shoe-->
+			<!--cosmetics-->
+		<div class="shoe"> 	
+			<div class="shoe_content">
+				<div class="topLink">
+					<dl>
+						<dt>美妆&个护</dt>
+						<dd><a href="">补水面膜  </a> </dd>|
+						<dd><a href="">保湿套装  </a> </dd>|
+						<dd><a href="">遮瑕粉底  </a> </dd>|
+						<dd><a href="">斩男口红  </a></dd>|
+						
+					</dl>
+				</div>
+				<div class="leftBanner">
+					<a href="#"><img src="img/cosmetics.jpg"/></a>
+				</div>
+				<div class="middleArea">
+						<div class="topSwiper">
+						<div class="mslide_content_box">
+							<div class="mslide_banners">
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe11.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe13.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe23.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe24.png" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe25.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe26.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe17.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+								
+							</div>
+						<div class="banner_menu">
+										
+								</div>
+						</div>
+				
+					</div>
+					
+			
+			
+			
+				</div>
+				
+				
+				<div class="rightArea">
+					<div class="bg-white">
+						<div class="header-wrapper">
+							<span class="goods-shopName">热销商品推荐</span>
+							<span class="turn-next">换一批</span>
+						</div>
+						<a href="#">
+							<img src="img/shoeright1.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">Angelababy同款2018女新款港味时尚粉红防滑百搭学生魔术贴厚底凉鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright2.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">秋冬季新款镂空蝴蝶结加绒保暖细跟单鞋女高跟鞋尖头绒面黑色女鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright3.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">断码清仓 特价 春韩国厚底原宿运动鞋女韩版女鞋学生鞋女休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright4.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">2018春新品帆布鞋小白鞋女鞋透气运动鞋厚底内增高板鞋休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+					</div>	
+				</div>
+				
+				
+				
+			</div>		
+		
+		
+		</div>
+		<!--cosmetics-->
+			<!--underwear-->
+		<div class="shoe"> 	
+			<div class="shoe_content">
+				<div class="topLink">
+					<dl>
+						<dt>内衣&配饰</dt>
+						<dd><a href="">睡衣  </a> </dd>|
+						<dd><a href=""> 短袜  </a> </dd>|
+						<dd><a href="">内衣套装  </a> </dd>|
+						<dd><a href=""> 棒球帽  </a></dd>|
+						<dd><a href="">手表</a></dd>  |
+					</dl>
+				</div>
+				<div class="leftBanner">
+					<a href="#"><img src="img/underwear.jpg"/></a>
+				</div>
+				<div class="middleArea">
+						<div class="topSwiper">
+						<div class="mslide_content_box">
+							<div class="mslide_banners">
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe11.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe13.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe23.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe24.png" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe25.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe26.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe17.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+								
+							</div>
+						<div class="banner_menu">
+										
+								</div>
+						</div>
+				
+					</div>
+					
+			
+			
+			
+				</div>
+				
+				
+				<div class="rightArea">
+					<div class="bg-white">
+						<div class="header-wrapper">
+							<span class="goods-shopName">热销商品推荐</span>
+							<span class="turn-next">换一批</span>
+						</div>
+						<a href="#">
+							<img src="img/shoeright1.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">Angelababy同款2018女新款港味时尚粉红防滑百搭学生魔术贴厚底凉鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright2.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">秋冬季新款镂空蝴蝶结加绒保暖细跟单鞋女高跟鞋尖头绒面黑色女鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright3.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">断码清仓 特价 春韩国厚底原宿运动鞋女韩版女鞋学生鞋女休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright4.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">2018春新品帆布鞋小白鞋女鞋透气运动鞋厚底内增高板鞋休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+					</div>	
+				</div>
+				
+				
+				
+			</div>		
+		
+		
+		</div>
+		<!--end underwear-->
+			<!--electric-->
+		<div class="shoe"> 	
+			<div class="shoe_content">
+				<div class="topLink">
+					<dl>
+						<dt>家居&电器</dt>
+						<dd><a href="">家纺好货 </a> </dd>|
+						<dd><a href="">收纳宝盒  </a> </dd>|
+						<dd><a href="">手机壳  </a> </dd>|
+						<dd><a href="">美发神器 </a></dd>|
+						<dd><a href=""> 充电宝</a></dd>  |
+					</dl>
+				</div>
+				<div class="leftBanner">
+					<a href="#"><img src="img/electric.jpg"/></a>
+				</div>
+				<div class="middleArea">
+						<div class="topSwiper">
+						<div class="mslide_content_box">
+							<div class="mslide_banners">
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe11.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe13.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe23.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe24.png" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe25.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe26.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe17.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+								
+							</div>
+						<div class="banner_menu">
+										
+								</div>
+						</div>
+				
+					</div>
+					
+			
+			
+			
+				</div>
+				
+				
+				<div class="rightArea">
+					<div class="bg-white">
+						<div class="header-wrapper">
+							<span class="goods-shopName">热销商品推荐</span>
+							<span class="turn-next">换一批</span>
+						</div>
+						<a href="#">
+							<img src="img/shoeright1.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">Angelababy同款2018女新款港味时尚粉红防滑百搭学生魔术贴厚底凉鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright2.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">秋冬季新款镂空蝴蝶结加绒保暖细跟单鞋女高跟鞋尖头绒面黑色女鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright3.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">断码清仓 特价 春韩国厚底原宿运动鞋女韩版女鞋学生鞋女休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright4.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">2018春新品帆布鞋小白鞋女鞋透气运动鞋厚底内增高板鞋休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+					</div>	
+				</div>
+				
+				
+				
+			</div>		
+		
+		
+		</div>
+		<!--electric-->
+			<!--food-->
+		<div class="shoe"> 	
+			<div class="shoe_content">
+				<div class="topLink">
+					<dl>
+						<dt>母婴&食品</dt>
+						<dd><a href="">儿童套装  </a> </dd>|
+						<dd><a href="">妈咪套装  </a> </dd>|
+						<dd><a href="">玩具用品  </a> </dd>|
+						<dd><a href="">零食大礼包  </a></dd>|
+						<dd><a href="">进口零食 </a></dd>  |
+						<dd><a href="">更多</a> </dd>|
+					</dl>
+				</div>
+				<div class="leftBanner">
+					<a href="#"><img src="img/food.jpg"/></a>
+				</div>
+				<div class="middleArea">
+						<div class="topSwiper">
+						<div class="mslide_content_box">
+							<div class="mslide_banners">
+								<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe11.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe13.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe23.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe24.png" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe25.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe26.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+									<div class="mslide_banner">
+									
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe17.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe14.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe21.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe22.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套件</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe15.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										<div class="mslide_banner_li" >
+											<a href="#"><img src="img/shoe12.jpg" alt="" /></a>
+											<a class="goods-title">时髦网红宽松显瘦两件套</a>
+											<div class="goods-price"> 
+												<em>¥59.90</em> 
+											</div>
+										</div>
+										
+										
+										
+										
+									</div>
+								
+							</div>
+						<div class="banner_menu">
+										
+								</div>
+						</div>
+				
+					</div>
+					
+			
+			
+			
+				</div>
+				
+				
+				<div class="rightArea">
+					<div class="bg-white">
+						<div class="header-wrapper">
+							<span class="goods-shopName">热销商品推荐</span>
+							<span class="turn-next">换一批</span>
+						</div>
+						<a href="#">
+							<img src="img/shoeright1.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">Angelababy同款2018女新款港味时尚粉红防滑百搭学生魔术贴厚底凉鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright2.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">秋冬季新款镂空蝴蝶结加绒保暖细跟单鞋女高跟鞋尖头绒面黑色女鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright3.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">断码清仓 特价 春韩国厚底原宿运动鞋女韩版女鞋学生鞋女休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+						<a href="#">
+							<img src="img/shoeright4.jpg" alt="" />
+						<div class="goods-info">
+							<p class=" goods-info-title">2018春新品帆布鞋小白鞋女鞋透气运动鞋厚底内增高板鞋休闲鞋</p>
+							<p class=" goods-info-price"><span>￥</span>54.90</p>
+						</div>
+						</a>
+					</div>	
+				</div>
+				
+				
+				
+			</div>		
+		
+		
+		</div>
+		<!--end food-->
+		
+		
+		<div class="like">
+			<div class="like_content">
+				<div class="yourlike">猜你喜欢</div>	
+				<div class="like_goods">
+					<div class="goods_item">
+						<a href="#"><img src="img/buy10.jpg"/></a>
+						<a href="#" class="goods_info_container">
+							<p >2018新款夏装女装原宿风百搭时尚大码微透衬衫防晒衫韩版女学生闺蜜装方格纹半身裙套装两件套</p>
+							<div class="goods_info">
+								<span class="price_info">¥59</span>
+								<div class="org_price"> ￥<span >84.29</span></div>
+								<span class="fav_num ">1546</span>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+		<!--footer-->
+		<div class="footer">
+			<div class="footer_content">
+				<div class="footer_help">
+					<div class="help_mod">
+							<div>-新手帮助-</div>
+							<ul>
+								<li>常见问题</li>
+								<li>自助服务</li>
+								<li>联系客服</li>
+								<li>意见反馈</li>
+							</ul>
+					</div>
+					<div class="help_mod">
+							<div>-权益保障-</div>
+							<ul>
+								<li>全国包邮</li>
+								<li>7天无理由退货</li>
+								<li>退货运费补贴</li>
+								<li>限时发货</li>
+							</ul>
+					</div><div class="help_mod">
+							<div>-支付方式-</div>
+							<ul>
+								<li>微信支付</li>
+								<li>支付宝</li>
+								<li>白富美支付</li>
+								<li></li>
+							</ul>
+					</div><div class="help_mod">
+							<div>-移动客户端下载-</div>
+							<ul>
+								<li>蘑菇街</li>
+								<li>美丽说</li>
+								<li>uni引力</li>
+								<li></li>
+							</ul>
+					</div>
+				</div>
+				<div class="footer_otherlink">
+					<a href="#">美丽说</a>
+					<a href="#">淘粉吧</a>
+					<a href="#">QQ钱包</a>
+					<a href="#">时尚品牌网</a>
+					<a href="#">装修 </a>
+					<a href="#">慧聪网</a>
+				</div>
+				<div class="footer_mgjinfo">
+					<a href="#">关于我们</a>
+					<a href="#">招聘信息</a>
+					<a href="#">联系我们</a>
+					<a href="#">商家入驻</a>
+					<a href="#">商家后台</a>
+					<a href="#">蘑菇商学院</a>
+					<a href="#">商家社区</a>
+					<a href="#">规则中心</a>
+					<a href="#">有害信息举报</a>
+					<p>©2017 Mogujie.com 杭州卷瓜网络有限公司</p>	
+				</div>
+				<div class="footer_copyright">
+					<div class="copyright_top">
+						<ul>
+							<li>营业执照：913301065526808764</li>
+							<li>网络文化经营许可证：浙网文（2016）0349-219号</li>
+							<li>增值电信业务经营许可证：浙B2-20110349</li>
+							<li>安全责任书</li>
+							<li>浙公网安备 33010602002329号</li>
+						</ul>
+					</div>
+					<div class="copyright_btm">
+						<ul>
+							<li>互联网药品信息服务资格证书编号：（浙)-经营性-2018-0002</li>
+							<li>浙网食A33010003</li>
+							<li>出版物网络交易平台服务经营备案证</li>
+							<li>（浙）网械平台备字[2018]第00006号</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end footer-->
+		
+		<!--rightbar-->
+		<div class="rightbar">
+			<div></div>
+			<div class="hover">
+				<img src="img/shopcart.png" alt="" />
+				<span>购物车</span>
+			</div>
+			<div class="hover">
+				<img src="img/coupon.png" alt="" />
+				<span>优惠券</span>
+			</div>
+			<div class="hover">
+				<img src="img/purse.png" alt="" />
+				<span>钱包</span></div>
+			<div class="hover">
+				<img src="img/spoor.png"/>
+				<span>足迹</span>
+			</div>
+			<div class="QRcode">
+				<img src="img/QRcode.png" alt="" />
+				<img src="img/detail-qrcode.png" class="qr"></img>
+			</div>
+			<div class="returntop">
+				<div>
+						<img src="img/top.png" alt="" />
+						<span>TOP</span>
+				</div>
+			</div>
+		</div>
+		<!--end rightbar-->
+		<!--scrolltop-->
+		
+			<div class="scrolltop">
+				<div class="scrolltop_content">
+					<div class="search_menu">
+						<img src="img/mogu.png" alt="" />
+						<span>全部商品分类</span>
+						<img src="img/sanjiao.png"/>
+					</div>
+					<div class=" nav_search_top nav_search_top2">
+						<div class="nav_search_top_select">
+							<span>搜商品</span>
+						</div>
+						<form>
+							<input type="text" placeholder="拖鞋" class="search_text">
+							
+							</input>
+							<input type="submit" value="搜索" class="search_sut">
+							
+							</input>
+						
+						</form>
+					</div>
+				</div>
+			</div>
+		
+		<!--end scrolltop-->
+		
+		
+	
 	</body>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/index.js"></script>
+
 </html>
