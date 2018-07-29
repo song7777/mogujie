@@ -137,7 +137,7 @@
 		
 		
 //无缝轮播3
-	$(function(){
+/*	$(function(){
 			var oClone = $(".shoe .mslide_banner").eq(0).clone();
 			$(".shoe  .mslide_banners").append(oClone);
 			var oWidth = $(".shoe .mslide_banner").width();
@@ -165,7 +165,7 @@
 				$(".shoe .mslide_banners").stop().animate({left:'-'+j*oWidth+'px'},2000);
 //				   	console.log(j);
 				   	index=j;
-			})
+			})*/
 //			var timer= 0;
 //			timer = setInterval(function(){
 //				index ++;
@@ -205,7 +205,7 @@
 //
 //			})
 
-})
+//})
 
 
 	//banner轮播
@@ -409,3 +409,12 @@
 				
 		})
 	})
+
+   var mySwiper = new Swiper('.swiper-container', {
+		autoplay: true,//可选选项，自动滑动
+	  loop : true,
+	   pagination: {
+	        el: '.swiper-pagination',
+	      },
+	})
+	    
